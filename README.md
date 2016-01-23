@@ -1,5 +1,6 @@
 # codewars-subject
-##简介:
+
+##Introduction:
 
 ######Codewars是个编程任务平台，提供支持多种编程语言，包括Javascript、Python、C#、CoffeeScript等编程语言。平台上的任务难度不等，可以不同程度的锻炼编程能力，并且还可以看到别人的解决方法，可以从中学习到巧妙的技巧。
 
