@@ -5,7 +5,7 @@
 
 ######该repository是在Codewars中做过的题目的汇总。
 
-#####example:
+##Subject:
 
 Description:
 
