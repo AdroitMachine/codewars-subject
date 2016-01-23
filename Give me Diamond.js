@@ -28,9 +28,7 @@ function diamond(n){
   var c = (n+1)/2;
   var s = '';
   for(var i=1;i<=n;i++){
-    var a = new Array(Math.abs(c-i)+1).join(' ');
-    var b = new Array(n-2*Math.abs(c-i)+1).join('*');
-    s +=(a+b+'\n');
+    s += (new Array(Math.abs(c-i)+1).join(' ') + new Array(n-2*Math.abs(c-i)+1).join('*')+'\n');
   }
   return s;
 }
