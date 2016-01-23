@@ -24,7 +24,7 @@ function findNb(m) {
 		}else if(result > m){
 			break;
 		}
-		base++;
+		base++; 
     }
     return (-1); 
 }
