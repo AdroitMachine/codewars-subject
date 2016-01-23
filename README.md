@@ -7,6 +7,8 @@
 
 ##Subject:
 
+###1.Give me Diamond
+
 Description:
 
 This kata is to practice simple string output. Jamie is a programmer, and girlfriend of James. She likes diamonds, and this time she expects String of diamond from James. As James doesn't know how to do it, he needs your help.
@@ -43,6 +45,8 @@ function diamond(n){
 }
 ```
 
+###2.Duplicate Encoder
+
 Description:
 
 The goal of this exercise is to convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')' if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
@@ -69,7 +73,7 @@ function duplicateEncode(word){
     return a.join('');
 }
 ```
-
+###3.Replace With Alphabet Position
 
 Description:
 
@@ -85,6 +89,8 @@ function alphabetPosition(text) {
   return str.slice(0,-1);
 }
 ```
+
+###4.Playing with digits
 
 Description:
 
@@ -117,6 +123,7 @@ function digPow(n, p){
 }
 ```
 
+###5.String to integer conversion
 
 Description:
 
