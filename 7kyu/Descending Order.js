@@ -9,6 +9,13 @@
 // Input: 1254859723 Output: 9875543221
 
 
+// mine
 function descendingOrder(n){
   return Number((''+n).split('').sort(function(a,b){return b-a}).join(''))
+}
+
+
+// top vote solution
+function descendingOrder(n){
+  return parseInt(String(n).split('').sort().reverse().join(''))
 }

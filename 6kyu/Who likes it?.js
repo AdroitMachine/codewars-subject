@@ -12,23 +12,6 @@
 // For more than 4 names, the number in and 2 others simply increases.
 
 
-// top vote solution
-function likes (names) {
-  var templates = [
-    'no one likes this',
-    '{name} likes this',
-    '{name} and {name} like this',
-    '{name}, {name} and {name} like this',
-    '{name}, {name} and {n} others like this'
-  ];
-  var idx = Math.min(names.length, 4);
-  
-  return templates[idx].replace(/{name}|{n}/g, function (val) {
-    return val === '{name}' ? names.shift() : names.length;
-  });
-}
-
-
 // mine 
 function likes(names) {
   var l = names.length,s='';
@@ -44,4 +27,21 @@ function likes(names) {
     s = names[0] + ', ' + names[1] + ' and ' + (l-2) + ' others like';
   }
   return s + ' this';
+}
+
+
+// top vote solution
+function likes (names) {
+  var templates = [
+    'no one likes this',
+    '{name} likes this',
+    '{name} and {name} like this',
+    '{name}, {name} and {name} like this',
+    '{name}, {name} and {n} others like this'
+  ];
+  var idx = Math.min(names.length, 4);
+  
+  return templates[idx].replace(/{name}|{n}/g, function (val) {
+    return val === '{name}' ? names.shift() : names.length;
+  });
 }

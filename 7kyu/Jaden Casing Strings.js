@@ -11,6 +11,15 @@
 // Note that the Java version expects a return value of null for an empty string or null.
 
 
+// mine
 String.prototype.toJadenCase = function () {
   return (this.toString().split(' ').map((e,i,t)=>t[i] = t[i][0].toUpperCase()+t[i].substring(1))).join(' ')
 };
+
+
+// top vote solution
+String.prototype.toJadenCase = function () { 
+  return this.split(" ").map(function(word){
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }).join(" ");
+}

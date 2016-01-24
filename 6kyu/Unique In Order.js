@@ -9,6 +9,7 @@
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
 
+// mine
 function uniqueInOrder(iterable){
   if(Object.prototype.toString.call(iterable) == '[object Array]'){
     if(iterable.length<1){
@@ -18,4 +19,19 @@ function uniqueInOrder(iterable){
     }
   }
   return iterable.match(/([a-zA-Z0-9])\1*/g) == null? []:iterable.match(/([a-zA-Z0-9])\1*/g).map(x=> isNaN(+x.substring(0,1))?x.substring(0,1):+x.substring(0,1))
+}
+
+
+// top vote solution
+function uniqueInOrder(it) {
+  var result = []
+  var last
+  
+  for (var i = 0; i < it.length; i++) {
+    if (it[i] !== last) {
+      result.push(last = it[i])
+    }
+  }
+  
+  return result
 }

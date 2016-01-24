@@ -14,6 +14,7 @@
 // Create a function that can receive two 'fangs' and determine if the product of the two is a valid vampire number.
 
 
+// mine
 var vampire_test = function(a, b){
   if(!(a<=0 && b<=0)){
     a>0?a=a:a=-a;b>0?b=b:b=-b;
@@ -25,3 +26,11 @@ var vampire_test = function(a, b){
     return false;
   }
 }
+
+
+// top vote solution
+function vampire_test(a, b){
+  return sortStr(a + '' + b) == sortStr(a * b + '');
+}
+
+function sortStr(v){ return v.split('').sort().join('') }

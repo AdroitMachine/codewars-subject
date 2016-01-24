@@ -11,13 +11,14 @@
 // Floats are considered UNeven for this kata.
 
 
-//top vote 
-function testEven(n){
-  return !(n % 2);
+
+// mine
+function testEven(n) {
+    return !(Math.abs(n) % 2);
 }
 
 
-//mine
-function testEven(n) {
-    return !(Math.abs(n) % 2);
+// top vote solution
+function testEven(n){
+  return !(n % 2);
 }

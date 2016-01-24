@@ -12,10 +12,18 @@
 // The test case won't pass Integer with leading zero
 
 
+// mine
 function unusedDigits(){
   var a = '0123456789'.match(new RegExp('[^' + Array.prototype.slice.apply(arguments).join('') + ']','g'));
   if(a != null){
     return a.sort((a,b)=>a-b).join('')
   }
   return '';
+}
+
+
+
+// top vote solution
+function unusedDigits(...args){
+  return "0123456789".replace(new RegExp('['+args.join('')+']','g'), '')
 }

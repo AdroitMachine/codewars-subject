@@ -7,6 +7,7 @@
 // isIsogram( "moOse" ) == false // -- ignore letter case
 
 
+// mine
 function isIsogram(str){
   var obj = {},
       arr = str.toLowerCase().split('');
@@ -18,4 +19,10 @@ function isIsogram(str){
     }
   }
   return true;
+}
+
+
+// top vote solution
+function isIsogram(str){ 
+  return !/(\w).*\1/i.test(str)
 }

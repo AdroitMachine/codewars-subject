@@ -20,8 +20,18 @@
 // This is for beginners so we want to test basic loops and math operations. Advanced users may find this extremely easy and can easily write this in one line.
 
 
+// mine
 function sum (numbers) {
 	return numbers.reduce(function(r,i) {
 		return r+i;
 	},0);
+};
+
+
+// top vote solution
+sum = function (numbers) {
+  "use strict";
+  return numbers.reduce(function(t, n){
+    return t + n;
+  }, 0);
 };

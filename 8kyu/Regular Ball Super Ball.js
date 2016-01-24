@@ -15,6 +15,13 @@
 // ball2.ballType     //=> "super"
 
 
+// mine
 var Ball = function(ballType) {
   this.ballType = ballType || "regular";
+};
+
+
+// top vote solution
+var Ball = function(ballType) {
+  this.ballType = ballType || 'regular';
 };

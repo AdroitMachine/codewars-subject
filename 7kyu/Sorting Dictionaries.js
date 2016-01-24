@@ -12,7 +12,16 @@
 // sortDict({1:2,2:4,3:6}) == [[3,6],[2,4],[1,2]]
 
 
+// mine
 function sortDict(dict){
   var r = Object.keys(dict);
   return r.map((x)=>[+x || x ,dict[x]]).sort((a,b)=>b[1]-a[1])
+}
+
+
+// top vote solution
+function sortDict(dict){
+  return Object.keys(dict)
+    .map(function(v){ return [+v || v, dict[v]] })
+    .sort(function(a, b){ return a[1] < b[1] });
 }

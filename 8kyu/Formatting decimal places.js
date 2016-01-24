@@ -7,6 +7,17 @@
 // 3.3424 is rounded 3.34
 
 
+
+
+// mine
 function twoDecimalPlaces(n) {
   return +(Math.round(n*100)/100).toFixed(2);
 }
+
+
+// top vote solution
+// 但是验证不通过
+// Test twoDecimalPlaces
+// works for some examples
+// worked for 2.675 - Expected: 2.68, instead got: 2.67
+const twoDecimalPlaces = n =>  Number(n.toFixed(2))

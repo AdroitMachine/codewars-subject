@@ -15,6 +15,13 @@
 // It should assume that all numbers are not signed and written in base 10
 
 
+// mine
 function myParseInt(str) {
   return /^\d+$/g.test(str.replace(/(^\s*)?(\s*$)?/g,''))? +str : "NaN";
+}
+
+
+// top vote solution
+function myParseInt(str) {
+  return /^\s*\d+\s*$/.test(str) ? +str : NaN;
 }

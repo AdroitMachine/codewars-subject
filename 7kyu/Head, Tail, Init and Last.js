@@ -4,13 +4,13 @@
 
 // $ ghci
 // GHCi, version 7.6.3: http://www.haskell.org/ghc/  :? for help
-// 位 head [1,2,3,4,5]
+// λ head [1,2,3,4,5]
 // 1
-// 位 tail [1,2,3,4,5]
+// λ tail [1,2,3,4,5]
 // [2,3,4,5]
-// 位 init [1,2,3,4,5]
+// λ init [1,2,3,4,5]
 // [1,2,3,4]
-// 位 last [1,2,3,4,5]
+// λ last [1,2,3,4,5]
 // 5
 // Your job is to implement these functions in your given language. Make sure it doesn't edit the array; that would cause problems! Here's a cheat sheet:
 
@@ -31,7 +31,19 @@
 // PLEASE NOTE: Clojure's last function shall be called last_ to prevent name clashes.
 
 
+// mine
 head = x=>x[0];
 tail = x=>x.slice(1);
 init = x=>x.slice(0,-1);
 last = x=>x[x.length-1];
+
+
+
+// top vote solution
+function head(a) {return a[0]}
+
+function last(a) {return a[a.length - 1]}
+
+function init(a) {return a.slice(0, -1)}
+
+function tail(a) {return a.slice(1)}

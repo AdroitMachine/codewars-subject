@@ -20,10 +20,20 @@
 // digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
 
+// mine
 function digPow(n, p){
   var total = 0;
   (''+n).split('').map(function(num,i){
     total += Math.pow(num,i+p);
   })
   return String(total/n).indexOf('.')<0? total/n : -1; 
+}
+
+
+// top vote solution
+function digPow(n, p){
+  var ans = (''+n).split('')
+    .map(function(d,i){return Math.pow(+d,i+p) })
+    .reduce(function(s,v){return s+v}) / n
+  return ans%1 ? -1 : ans    
 }

@@ -13,6 +13,7 @@
 // Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
 
 
+// mine
 function getGrade (s1, s2, s3) {
   var s = (s1+s2+s3)/3;
   var l = ['A','B','C','D','F'],i;
@@ -24,4 +25,16 @@ function getGrade (s1, s2, s3) {
     i = 10-(~~(s/10))-1;
   }
   return l[i];
+}
+
+
+
+// top vote solution
+function getGrade (s1, s2, s3) {
+  avg = (s1+s2+s3)/3;
+  if (avg < 60)  return "F";
+    else if (avg < 70) return "D";
+    else if (avg < 80) return "C";
+    else if (avg < 90) return "B";
+    else return "A";
 }

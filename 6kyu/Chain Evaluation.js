@@ -17,14 +17,6 @@
 // After you're done, one could chain these five methods to create chains of almost any length.
 
 
-// top vote solution
-Number.prototype.add      = function(n){ return this+n }
-Number.prototype.subtract = function(n){ return this-n }
-Number.prototype.multiply = function(n){ return this*n }
-Number.prototype.divide   = function(n){ return this/n }
-Number.prototype.square   = function(){ return this*this }
-
-
 // mine
 Number.prototype.add = function(n){
   return this+n
@@ -42,3 +34,11 @@ Number.prototype.square = function(n){
   var _ = this;
   return Math.pow(_,2)
 }
+
+
+// top vote solution
+Number.prototype.add      = function(n){ return this+n }
+Number.prototype.subtract = function(n){ return this-n }
+Number.prototype.multiply = function(n){ return this*n }
+Number.prototype.divide   = function(n){ return this/n }
+Number.prototype.square   = function(){ return this*this }

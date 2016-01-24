@@ -21,6 +21,7 @@
 // JS students, like Python ones, must implement the diamond(n) method, and return null for invalid input.
 
 
+// mine
 function diamond(n){
   if(typeof n != 'number' || n%2 == 0 || n<0){
     return null;
@@ -32,3 +33,18 @@ function diamond(n){
   }
   return s;
 }
+
+
+// top vote solution
+function diamond(n){
+  if( n%2==0 || n<1 ) return null
+  var x=0, add, diam = line(x,n);
+  while( (x+=2) < n ){
+    add = line(x/2,n-x);
+    diam = add+diam+add;
+  }
+  return diam;
+}//z.
+
+function repeat(str,x){return Array(x+1).join(str); }
+function line(spaces,stars){ return repeat(" ",spaces)+repeat("*",stars)+"\n"; }

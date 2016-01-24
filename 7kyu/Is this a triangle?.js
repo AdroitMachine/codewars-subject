@@ -5,6 +5,14 @@
 // (In this case, all triangles must have surface greater than 0 to be accepted).
 
 
+// mine 
 function isTriangle(a,b,c){
    return (a+b>c && a+c>b && a-c<b && a-b<c && b+c>a && b-c<a && b-a<c&& c-b<a && c-a<b) || false
+}
+
+
+
+// top vote solution
+function isTriangle(a,b,c){
+   return a + b > c && a + c > b && c + b > a;
 }

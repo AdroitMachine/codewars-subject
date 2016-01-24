@@ -18,6 +18,14 @@
 // (Thanks to wthit56 for the suggestion!)
 
 
+// mine
 function autocomplete(input, dictionary){
   return dictionary.filter(x=>new RegExp('^'+input.replace(/[^a-z]/gi,''),'i').test(x)?x:'').slice(0,5)
+}
+
+
+// top vote solution
+function autocomplete(input, dictionary){
+  var r = new RegExp('^' + input.replace(/[^a-z]/gi,''), 'i');
+  return dictionary.filter(function(w){ return r.test(w); }).slice(0, 5);
 }

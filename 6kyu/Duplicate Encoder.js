@@ -13,6 +13,7 @@
 // "(( @" => "))(("
 
 
+// mine
 function duplicateEncode(word){
     word = word.toLowerCase();
     var a = [];
@@ -21,4 +22,13 @@ function duplicateEncode(word){
       word.match(r).length>1?a.push(')'):a.push('(');
     }
     return a.join('');
+}
+
+
+// top vote solution
+function duplicateEncode(word) {
+  var letters = word.toLowerCase().split('')
+  return letters.map(function(c, i) {
+    return letters.some(function(x, j) { return x === c && i !== j }) ? ')' : '('
+  }).join('')
 }

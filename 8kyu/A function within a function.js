@@ -6,8 +6,17 @@
 // three(); // returns 3
 
 
+// mine
 function always (n) {
   return function(){
     return n;
   }
+}
+
+
+// top vote solution
+function always(n) {
+
+  return function () { return n };
+  
 }

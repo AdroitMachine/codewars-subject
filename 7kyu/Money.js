@@ -27,6 +27,7 @@
 // Assumptions : Assume that Desired Principal 'D' is always greater than the initial principal, however it is best to take into consideration that if the Desired Principal 'D' is equal to Principal 'P' this should return 0 Years.
 
 
+// mine
 function calculateYears(p, i, t, d) {
     var s = 0;
     while(p<d){
@@ -34,4 +35,13 @@ function calculateYears(p, i, t, d) {
       p = p + p*i*(1-t);
     }
     return s
+}
+
+
+// top vote solution
+function calculateYears(principal, interest, tax, desired) {
+  return Math.ceil(
+    Math.log(desired / principal) / 
+    Math.log(1 + interest * (1 - tax))
+  );
 }
