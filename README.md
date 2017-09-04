@@ -1,15 +1,15 @@
-#Codewars-subject
+# Codewars-subject
 
-##Introduction:
+## Introduction:
 
-######Codewars是个编程任务平台，提供支持多种编程语言，包括Javascript、Python、C#、CoffeeScript等编程语言。平台上的任务难度不等，可以不同程度的锻炼编程能力，并且还可以看到别人的解决方法，可以从中学习到巧妙的技巧。
+###### Codewars是个编程任务平台，提供支持多种编程语言，包括Javascript、Python、C#、CoffeeScript等编程语言。平台上的任务难度不等，可以不同程度的锻炼编程能力，并且还可以看到别人的解决方法，可以从中学习到巧妙的技巧。
 
 
-######该repository是在Codewars中做过的题目的汇总。
+###### 该repository是在Codewars中做过的题目的汇总。
 
-##Subject:
+## Subject:
 
-###1.Give me Diamond
+### 1.Give me Diamond
 
 Description:
 
@@ -46,7 +46,7 @@ function diamond(n){
 }
 ```
 
-###2.Duplicate Encoder
+### 2.Duplicate Encoder
 
 Description:
 
@@ -74,7 +74,7 @@ function duplicateEncode(word){
     return a.join('');
 }
 ```
-###3.Replace With Alphabet Position
+### 3.Replace With Alphabet Position
 
 Description:
 
@@ -91,7 +91,7 @@ function alphabetPosition(text) {
 }
 ```
 
-###4.Playing with digits
+### 4.Playing with digits
 
 Description:
 
@@ -124,7 +124,7 @@ function digPow(n, p){
 }
 ```
 
-###5.String to integer conversion
+### 5.String to integer conversion
 
 Description:
 
